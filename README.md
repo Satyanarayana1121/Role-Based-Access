@@ -189,13 +189,20 @@ This project is open-source and free to use under the MIT License.
 
 ## **Contact**
 If you have any questions or feedback, feel free to reach out:
-- Email: [your-email@example.com]
-- GitHub: [your-github-profile]
+- Email: sathyanarayana1121@gmail.com
+- GitHub: https://github.com/Satyanarayana1121
 
 ---
 
 ### **Screenshots**
-Add relevant screenshots for:
-1. **User Management page**
-2. **Role Management page**
-3. **Permission Management page**
+Relevant screenshots for:
+![User Management Screen](image.png)
+![Role Management Screen](image-1.png)
+![Permission Management Screen](image-2.png)
+
+![Add User Modal](image-3.png)
+![Edit User Modal](image-4.png)
+![Delete User Conformation Modal](image-5.png)
+![Add Role Screen](image-6.png)
+![Assigning Permissions Role Screen](image-7.png)
+

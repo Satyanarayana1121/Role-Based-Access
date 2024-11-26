@@ -7,17 +7,16 @@ import DeleteUserModal from './DeleteUserModal';
 const UserList = () => {
   const { users, addUser, updateUser, deleteUser } = useContext(UserContext);
 
-  // Modal States
+  
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
 
-  const [selectedUser, setSelectedUser] = useState(null); // Selected user for edit or delete
+  const [selectedUser, setSelectedUser] = useState(null);
 
   return (
     <div className="p-4">
       <h2 className="text-lg font-bold mb-4">User Management</h2>
-      {/* Add User Button */}
       <button
         className="bg-blue-500 text-white px-4 py-2 rounded mb-4"
         onClick={() => setIsAddModalOpen(true)}
@@ -25,7 +24,6 @@ const UserList = () => {
         Add User
       </button>
 
-      {/* User Table */}
       <table className="min-w-full bg-white border">
         <thead>
           <tr>
@@ -42,7 +40,6 @@ const UserList = () => {
               <td className="py-2 px-4">{user.email}</td>
               <td className="py-2 px-4">{user.role}</td>
               <td className="py-2 px-4">
-                {/* Edit Button */}
                 <button
                   className="bg-yellow-500 text-white px-2 py-1 rounded mr-2"
                   onClick={() => {
@@ -53,7 +50,6 @@ const UserList = () => {
                   Edit
                 </button>
 
-                {/* Delete Button */}
                 <button
                   className="bg-red-500 text-white px-2 py-1 rounded"
                   onClick={() => {
@@ -69,7 +65,6 @@ const UserList = () => {
         </tbody>
       </table>
 
-      {/* Modals */}
       {isAddModalOpen && (
         <AddUserModal
           onClose={() => setIsAddModalOpen(false)}
